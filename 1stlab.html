@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS lab</title>
+    </head>
+    <body>
+        <h1>My First JavaScript Lab</h1>
+        <p id="my_date"></p>
+        <button type="button" onclick="showDate()">Click To Show Date</button>
+        <script type="text/javascript">
+            function showDate() 
+            {
+                var date = new Date();
+                var day = date.getDate();
+                var month = date.getMonth();
+                var year = date.getFullYear();
+                document.getElementById('my_date').innerHTML = day + '/' + month + '/' + year;
+            }
+        </script>
+    </body>
+</html>
